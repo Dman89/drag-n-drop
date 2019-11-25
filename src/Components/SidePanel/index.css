@@ -1,0 +1,7 @@
+.Side-Panel {
+  border-right: 2px gray solid;
+  min-width: 125px;
+  height: 100%;
+  width: fit-content;
+  flex-grow: 1;
+}
