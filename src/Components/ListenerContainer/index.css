@@ -1,0 +1,6 @@
+.Listener-Container {
+  min-width: 50px;
+  min-height: 50px;
+  border: 2px gray solid;
+  background-color: #ddd;
+}
