@@ -1,0 +1,11 @@
+.App-Header {
+  min-height: 30px;
+  height: fit-content;
+  border-bottom: 2px gray solid;
+  width: 100%;
+}
+
+.Header-Content {
+  margin: 15px 30px;
+  text-align: center;
+}
