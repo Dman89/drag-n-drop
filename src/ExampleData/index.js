@@ -9,7 +9,8 @@ const data = {
             color: "red"
           },
           options: {},
-          order: 1
+          order: 1,
+          key: "x4g4"
         },
         {
           id: "TestComponent",
@@ -19,12 +20,13 @@ const data = {
           options: {
             message: "This is the second message"
           },
-          order: 2
+          order: 2,
+          key: "b4d6"
         }
       ],
       style: {
-        width: "100px",
-        height: "100px"
+        width: "100%",
+        height: "fit-content"
       }
     }
   ],
@@ -33,7 +35,27 @@ const data = {
       id: "TestComponent",
       element: require("../Components/TestComponent").default,
       defaultStyle: {},
-      defaultOptions: {}
+      defaultOptions: {},
+      style: {},
+      options: {}
+    },
+    TestComponent1: {
+      id: "TestComponent1",
+      element: require("../Components/TestComponent").default,
+      defaultStyle: {},
+      defaultOptions: {
+        message: "Paragraph component"
+      },
+      style: {},
+      options: {}
+    },
+    TestComponent2: {
+      id: "TestComponent2",
+      element: require("../Components/TestComponent2").default,
+      defaultStyle: {},
+      defaultOptions: {},
+      style: {},
+      options: {}
     }
   }
 };

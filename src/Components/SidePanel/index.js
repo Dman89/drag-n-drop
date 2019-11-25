@@ -1,16 +1,13 @@
 import React from "react";
 import "./index.css";
-import DynamicComponent from "../DynamicComponent";
+import DropComponent from "../DropComponent";
 
 function SidePanel({ components }) {
   return (
     <div className="Side-Panel">
-      {Object.values(components).map(component => {
-        const { defaultOptions: options, defaultStyle: style } = component;
-        return (
-          <DynamicComponent {...component} options={options} style={style} />
-        );
-      })}
+      {Object.values(components).map(component => (
+        <DropComponent component={component} key={component.id} />
+      ))}
     </div>
   );
 }

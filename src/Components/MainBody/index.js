@@ -7,9 +7,11 @@ function MainBody({ data: { rows, components } }) {
     <div className="Main-Body">
       {rows.map(elements => (
         <ListenerContainer
+          id={elements.id}
           style={elements.style}
           elements={elements}
           components={components}
+          key={elements.id}
         />
       ))}
     </div>

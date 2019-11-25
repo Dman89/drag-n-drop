@@ -1,7 +1,8 @@
 .Side-Panel {
   border-right: 2px gray solid;
   min-width: 125px;
-  height: 100%;
+  height: calc(100% - 60px);
   width: fit-content;
   flex-grow: 1;
+  padding: 30px;
 }
