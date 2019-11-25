@@ -2,38 +2,36 @@ const data = {
   rows: [
     {
       id: "rowOne",
-      components: [
-        {
-          id: "TestComponent",
-          style: {
-            color: "red"
-          },
-          options: {},
-          order: 1,
-          key: "x4g4"
-        },
-        {
-          id: "TestComponent",
-          style: {
-            color: "blue"
-          },
-          options: {
-            message: "This is the second message"
-          },
-          order: 2,
-          key: "b4d6"
-        }
-      ],
+      components: [],
       style: {
         width: "100%",
-        height: "fit-content"
+        height: "fit-content",
+        marginBottom: "15px"
+      }
+    },
+    {
+      id: "rowTwo",
+      components: [],
+      style: {
+        width: "100%",
+        height: "fit-content",
+        marginBottom: "15px"
+      }
+    },
+    {
+      id: "rowThree",
+      components: [],
+      style: {
+        width: "100%",
+        height: "fit-content",
+        marginBottom: "15px"
       }
     }
   ],
   components: {
-    TestComponent: {
-      id: "TestComponent",
-      element: require("../Components/TestComponent").default,
+    TestComponent2: {
+      id: "TestComponent2",
+      element: require("../Components/TestComponent2").default,
       defaultStyle: {},
       defaultOptions: {},
       style: {},
@@ -42,18 +40,12 @@ const data = {
     TestComponent1: {
       id: "TestComponent1",
       element: require("../Components/TestComponent").default,
-      defaultStyle: {},
+      defaultStyle: {
+        marginBottom: "15px"
+      },
       defaultOptions: {
         message: "Paragraph component"
       },
-      style: {},
-      options: {}
-    },
-    TestComponent2: {
-      id: "TestComponent2",
-      element: require("../Components/TestComponent2").default,
-      defaultStyle: {},
-      defaultOptions: {},
       style: {},
       options: {}
     }
