@@ -2,11 +2,15 @@ import React from "react";
 import "./index.css";
 import ListenerContainer from "../ListenerContainer";
 
-function MainBody({ data: { styles, rows } }) {
+function MainBody({ data: { rows, components } }) {
   return (
     <div className="Main-Body">
-      {rows.map(row => (
-        <ListenerContainer styles={styles[row.id]} row={row} />
+      {rows.map(elements => (
+        <ListenerContainer
+          style={elements.style}
+          elements={elements}
+          components={components}
+        />
       ))}
     </div>
   );
