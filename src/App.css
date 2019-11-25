@@ -1,0 +1,8 @@
+.App {
+  height: calc(100vh - 53px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+}
